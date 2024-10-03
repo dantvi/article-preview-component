@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -5,4 +14,23 @@ html {
 
 body {
     margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.3rem;
+    font-weight: medium;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    background-color: var(--light-grayish-blue);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    max-width: 73rem;
+    max-height: 28rem;
+    background-color: lightpink;
 }
