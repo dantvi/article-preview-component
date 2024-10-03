@@ -22,6 +22,10 @@ body {
     background-color: var(--light-grayish-blue);
 }
 
+.hidden {
+    display: none;
+}
+
 .card-container {
     display: flex;
     justify-content: center;
@@ -34,3 +38,44 @@ body {
     max-height: 28rem;
     background-color: lightpink;
 }
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/************************************************************************/
+
+.button-container {
+    border: 2px solid black;
+}
+
+.share-btn {
+    background-color: #eee;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.share-bubble {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    background-color: #374151;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    width: 150px;
+}
+
+.bubble-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+
