@@ -49,6 +49,7 @@ body {
 
 .button-container {
     border: 2px solid black;
+    position: relative;
 }
 
 .share-btn {
@@ -62,7 +63,7 @@ body {
 .share-bubble {
     position: absolute;
     top: -60px;
-    right: 0;
+    right: -75px;
     background-color: #374151;
     border-radius: 8px;
     padding: 10px;
@@ -75,6 +76,17 @@ body {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+}
+
+.arrow-down {
+    position: absolute;
+    top: 40px;
+    left: 75px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #2367d4; /* Same color as the share bubble */
 }
 
 
