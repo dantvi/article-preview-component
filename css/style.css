@@ -169,7 +169,7 @@ h1 {
     border-top: 10px solid var(--very-dark-grayish-blue);
 }
 
-/* Media Query - Tablets and Large Smartphones */
+/* Media Query - Tablets and Large Mobile */
 @media screen and (max-width: 870px) {
     .card {
         display: block;
@@ -203,7 +203,7 @@ h1 {
     .share-bubble {
         width: 32.7rem;
         height: 6.4rem;
-        top: -4px;
+        top: -5px;
         right: -32.5px;
         border-radius: 0 0 10px 10px;
     }
@@ -214,5 +214,20 @@ h1 {
 
     .arrow-down {
         display: none;
+    }
+
+    .move-down {
+        transform: translateY(7px);
+    }
+}
+
+/* Media Query - Small Mobile */
+@media screen and (max-width: 340px) {
+    .card {
+        width: 30rem;
+    }
+
+    .share-bubble {
+        width: 30rem;
     }
 }
