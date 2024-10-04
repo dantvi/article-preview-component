@@ -168,3 +168,35 @@ h1 {
     border-right: 10px solid transparent;
     border-top: 10px solid var(--very-dark-grayish-blue);
 }
+
+/* Media Query - Tablets and Large Smartphones */
+@media screen and (max-width: 870px) {
+    .card {
+        display: block;
+        max-width: 32.7rem;
+    }
+
+    .image-container {
+        max-height: 20rem;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-image {
+        width: 100%;
+        transform: translateY(-14px);
+    }
+    
+    .card-content {
+        padding: 3.6rem 3.2rem 2rem 3.2rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+    }
+
+    .top-content p {
+        margin: 1.2rem 0 3.2rem 0;
+    }
+}
