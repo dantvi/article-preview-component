@@ -103,7 +103,6 @@ h1 {
 }
 
 .button-container {
-    border: 2px solid black;
     position: relative;
     display: flex;
     align-items: center;
@@ -124,30 +123,49 @@ h1 {
 }
 
 .share-bubble {
+    width: 24.8rem;
+    height: 5.5rem;
     position: absolute;
-    top: -60px;
-    right: -75px;
-    background-color: #374151;
-    border-radius: 8px;
-    padding: 1rem;
-    color: white;
-    width: 15rem;
+    top: -80px;
+    right: -106px;
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 10px;
+    color: var(--grayish-blue);
+
 }
 
 .bubble-content {
-    display: flex;
-    justify-content: space-between;
+    height: 100%;
     width: 100%;
+    display: flex;
     align-items: center;
+}
+
+.share-text {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-left: 3.7rem;
+}
+
+.social-icons {
+    margin-left: 2.1rem;
+    display: flex;
+    gap: 1.6rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.social-icons a {
+    color: var(--white);
 }
 
 .arrow-down {
     position: absolute;
-    top: 40px;
-    left: 75px;
+    top: 55px;
+    left: 115px;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #2367d4;
+    border-top: 10px solid var(--very-dark-grayish-blue);
 }
