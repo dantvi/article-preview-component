@@ -20,6 +20,7 @@ body {
     font-weight: medium;
     line-height: 20px;
     letter-spacing: 0.12px;
+    color: var(--desaturated-dark-blue);
     background-color: var(--light-grayish-blue);
 }
 
@@ -51,8 +52,8 @@ h1 {
 }
 
 .image-container {
-    width: 285px;
-    height: 280px;
+    width: 100%;
+    max-height: 28rem;
     overflow: hidden;
 }
 
@@ -61,20 +62,44 @@ h1 {
     border-radius: 10px 0 0 10px;
 }
 
-
-
-
-
-
 .card-content {
     grid-column: 2 / span 2;
-    padding: 32px 40px;
+    padding: 3.2rem 4rem;
+}
+
+.top-content p {
+    margin: 1.2rem 0 2rem 0;
 }
 
 .bottom-content {
     display: flex;
     justify-content: space-between;
     position: relative;
+}
+
+.profile-info {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.profile-image-container {
+    width: 4rem;
+    height: 4rem;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-weight: bold;
+    color: var(--very-dark-grayish-blue);
+}
+
+.date {
+    color: var(--grayish-blue);
 }
 
 /************************************************************************/
@@ -87,7 +112,7 @@ h1 {
 .share-btn {
     background-color: #eee;
     border-radius: 50%;
-    padding: 10px;
+    padding: 1rem;
     cursor: pointer;
     position: relative;
 }
@@ -98,9 +123,9 @@ h1 {
     right: -75px;
     background-color: #374151;
     border-radius: 8px;
-    padding: 10px;
+    padding: 1rem;
     color: white;
-    width: 150px;
+    width: 15rem;
 }
 
 .bubble-content {
@@ -119,5 +144,4 @@ h1 {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid #2367d4;
-    /* Same color as the share bubble */
 }
