@@ -5,6 +5,7 @@
     --desaturated-dark-blue: hsl(214, 17%, 51%);
     --grayish-blue: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
+    --white: hsl(0, 0%, 100%);
 }
 
 html {
@@ -22,6 +23,14 @@ body {
     background-color: var(--light-grayish-blue);
 }
 
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--very-dark-grayish-blue);
+}
+
 .hidden {
     display: none;
 }
@@ -34,9 +43,32 @@ body {
 }
 
 .card {
+    display: grid;
+    grid-template-columns: 28.5rem 1fr 1fr;
     max-width: 73rem;
-    max-height: 28rem;
-    background-color: lightpink;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.image-container {
+    width: 285px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.card-image {
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+
+
+
+.card-content {
+    grid-column: 2 / span 2;
+    padding: 32px 40px;
 }
 
 .bottom-content {
@@ -86,8 +118,6 @@ body {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #2367d4; /* Same color as the share bubble */
+    border-top: 10px solid #2367d4;
+    /* Same color as the share bubble */
 }
-
-
-
