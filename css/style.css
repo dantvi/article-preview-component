@@ -199,4 +199,20 @@ h1 {
     .top-content p {
         margin: 1.2rem 0 3.2rem 0;
     }
+
+    .share-bubble {
+        width: 32.7rem;
+        height: 6.4rem;
+        top: -4px;
+        right: -32.5px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .share-btn {
+        z-index: 10;
+    }
+
+    .arrow-down {
+        display: none;
+    }
 }
